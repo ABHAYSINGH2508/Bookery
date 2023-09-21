@@ -1,0 +1,112 @@
+{% extends 'begin/base.html' %}
+{% load static %}
+
+{% block body %}
+
+<script src="https://kit.fontawesome.com/189da90ff4.js" crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- ========================================================== -->
+<div id="flex1" class="container mt-3">
+    <div class="row">
+
+        <div class="card" id="bestsell" style="width:20%">
+            <div class="offer position-absolute">45%</div>
+            <img class="card-img-top" src="{% static 'images/bs1.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">It ends with us</h4>
+                <p class="card-text">Author: Colleen Hoover </p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 399 |Publisher: Fingerprint! Publishing | Released: 02 Aug 2016">More
+                    Details</a>
+            </div>
+        </div>
+
+        <div class="card" id="bestsell" style="width:20%">
+            <div class="offer position-absolute">35%</div>
+            <img class="card-img-top" src="{% static 'images/bs2.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">You Can</h4>
+                <p class="card-text">Author :George Matthew Adams</p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 499 |Publisher: Fingerprint! Publishing | Released: 01 Jul 2020">More
+                    Details</a>
+
+            </div>
+        </div>
+        <div class="card" id="bestsell" style="width:20%">
+            <div class="offer position-absolute">40%</div>
+            <img class="card-img-top" src="{% static 'images/bs3.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Ikigai</h4>
+                <p class="card-text">Author :Francesc Miralles</p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 399 |Publisher: Cornerstone |Released: 07 Sep 2017 ">More Details</a>
+
+            </div>
+        </div>
+
+        <div class="card" id="bestsell" style="width:20%">
+            <div class="offer position-absolute">35%</div>
+            <img class="card-img-top" src="{% static 'images/bs4.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Do Epic Shit</h4>
+                <p class="card-text">Author :Ankur Warikoo</p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 199 |Publisher: Juggernaut |Released: 27 Dec 2021 ">More Details</a>
+
+            </div>
+        </div>
+
+        <div class="card" id="bestsell" style="width:20%;">
+            <div class="offer position-absolute">45%</div>
+            <img class="card-img-top" src="{% static 'images/bs5.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">It Starts With Us</h4>
+                <p class="card-text">Author :Colleen Hoover</p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 412 |Publisher: Simon & Schuster Ltd | Released: 18 Oct 2022 |">More
+                    Details</a>
+
+            </div>
+        </div>
+
+        <div class="card" id="bestsell" style="width:20%">
+            <div class="offer position-absolute">55%</div>
+            <img class="card-img-top" src="{% static 'images/bs6.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Indian Polity</h4>
+                <p class="card-text">Author :Ankur Warikoo</p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 699 | Publisher: McGraw Hill | Released: 29 Sep 2021 | ">More Details</a>
+
+            </div>
+        </div>
+
+        <div class="card" id="bestsell" style="width:20%">
+            <div class="offer position-absolute">65%</div>
+            <img class="card-img-top" src="{% static 'images/bs7.jpg' %}" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h5 class="card-title">Life's Amazing Secrets</h5>
+                <p class="card-text">Author : Gaur Gopal Das</p>
+                <a href="#" class="btn btn-primary" id="toastbtn" data-bs-toggle="popover" title="Info"
+                    data-bs-content="Price: 499 |Publisher: McGraw Hill | Released: 2018 |">More Details</a>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>
+
+{% endblock %}

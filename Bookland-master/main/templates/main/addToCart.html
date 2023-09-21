@@ -1,0 +1,30 @@
+{% extends 'begin/base.html' %}
+{% block body %}
+
+
+
+<button style="margin-top: 190px;margin-left: 10px;" type="button" onclick="loadDoc()">Add to cart</button>
+
+<div style="margin-top: 10px;margin-left: 10px;" id="demo">
+    <h2>i will change when you hit add to cart button</h2>
+</div>
+
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML =
+                    fetch(`/search/suggest.json?type=product&q=id:${id}&resources[type]=product`).then(data => {
+                        this.responseText;
+
+                    });
+            }
+        };
+        xhttp.open("GET", "http://127.0.0.1:8000/main/showAddToCart/", true);
+        xhttp.send();
+    }
+</script>
+
+
+{% endblock %}

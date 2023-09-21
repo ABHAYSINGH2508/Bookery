@@ -1,0 +1,428 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="{% static 'begin/style.css' %}">
+    <title>My website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ============================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/189da90ff4.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ============================================= -->
+    <style>
+        .d-block {
+            height: 500px;
+            width: 100%;
+            margin-top: 75px;
+            position: relative;
+
+        }
+
+        #back1 {
+            height: 575px;
+            width: 100%;
+            position: absolute
+        }
+
+        .line {
+            height: 4px;
+            background-color: red;
+            /* For browsers that do not support gradients */
+            background-image: linear-gradient(to right, red, yellow, green);
+        }
+
+        #tag1 {
+            width: 20%;
+            height: 100px;
+            float: left;
+            margin-left: 180px;
+
+        }
+
+        #tag3 {
+            font-size: 30px;
+        }
+
+        #tag4 {
+            font-size: 20px;
+        }
+
+        #bestsell {
+            height: 550px;
+            top: 90px;
+            padding: 1px;
+        }
+
+        #flex1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .offer {
+            right: 10px;
+            top: 5px;
+            background: red;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            color: #fff;
+            right: 3px;
+            line-height: 20px;
+            padding-top: 8px;
+            font-weight: 700;
+            text-align: center;
+            font-size: 13px;
+
+        }
+
+        /* ================================================= */
+        @import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+        .one {
+            font-size: 30px;
+            text-decoration: none;
+            margin: 0px;
+            float: right;
+            /* top:5px; */
+            color: white;
+            z-index: 5;
+
+        }
+
+        .one:hover {
+
+            border: none;
+            color: lavenderblush;
+            text-decoration: underline;
+        }
+
+        .basenav {
+            background-color: #12273c;
+            color: white;
+            font-weight: bold;
+            margin: 0 0 0 0;
+            height: 75px;
+            z-index: 5;
+
+
+        }
+
+        .basenav h1 {
+            font-weight: 900;
+            left: 5px;
+        }
+
+
+        .formreg {
+
+            margin: 90px 10px 10px 40px;
+            padding: 10px 150px;
+            height: 130vh;
+            width: 50vw;
+            left: 100px;
+            background-color: white;
+
+        }
+
+        .formlog {
+            border: 1px solid black;
+            margin: 90px 10px 10px 40px;
+            padding: 10px 150px;
+            height: 90vh;
+            width: 50vw;
+            left: 100px;
+            background-color: white;
+
+
+        }
+
+        .indeximg {
+            background-color: red;
+        }
+
+
+        #services {
+            background-image: url('/static/images/servicebg.jpg');
+            padding: 80px 0;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            filter: blur(20%);
+
+
+        }
+
+        .servicediv {
+            margin-top: 10%;
+            color: white;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+        }
+
+        #about-us {
+            display: block;
+            padding-bottom: 50px;
+            padding-top: 45px;
+            margin: 80px 0 0 80px;
+        }
+
+        #about-us ul li {
+            margin: 20px 0 0 0;
+        }
+
+        #about-us ul {
+            margin-left: 20px;
+
+        }
+
+        .form-control {
+            width: 100%;
+            color: black;
+        }
+
+        .about-us-img {
+            margin: 20px 0 0 0;
+
+            float: right;
+            height: 180px;
+        }
+
+        #mainh1 {
+            position: absolute;
+            top: 20%;
+            font-size: 60px;
+            font-weight: normal;
+            left: 5px;
+            /* color: rgba(255, 214, 197, 0.874); */
+            color: rgba(255, 201, 197, 0.886);
+            text-align: center;
+            font-family: 'Aclonica', sans-serif;
+            ;
+
+        }
+
+        #pmain {
+            position: absolute;
+            top: 50%;
+            font-size: 90px;
+            font-weight: normal;
+            color: black;
+            left: 25%;
+        }
+
+        < !--service-->div p {
+            margin-top: 50%;
+        }
+
+        .alert {
+            top: 30%;
+        }
+
+        < !--profile-->.content-section {
+            background: #ffffff;
+            padding: 10px 20px;
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            border: 2px solid black;
+        }
+
+
+        < !--main app-->.container {
+            display: flex;
+            < !--justify-content: space-around;
+            -->flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .containerone {
+            display: flex;
+            < !--justify-content: space-around;
+            -->flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid black;
+        }
+
+        .card-me {
+            height: 430px;
+            margin: 90px 20px 20px 20px;
+            float: left;
+        }
+
+        .detail {
+            margin-top: 250px;
+        }
+
+        .image-side {
+            float: left;
+            < !--margin-bottom: 60px;
+            -->
+        }
+
+        .form-inline {
+            margin-top: 150px;
+
+        }
+
+        .sell-form {
+            margin: 20px 0 0 20px;
+            /* border: 2px solid black; */
+            width: 600px;
+            height: 600px;
+            padding: 100px 10px 10px 100px;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        input {
+            margin-bottom: 0.5rem;
+            padding: 0px 6px;
+            width: 30%;
+            height: 32px;
+        }
+
+        .ubutton {
+            background: #12273c;
+            color: white;
+            font-weight: 600;
+            border-radius: 0.6em;
+            border: none;
+            padding: 10px 40px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-left: 8px;
+            text-decoration: none;
+            outline: none !important;
+        }
+
+        .ubutton:hover {
+            font-size: 40px;
+            color: black;
+            border: 1px solid white;
+        }
+
+        #updatebutton:hover {
+            font-size: 21px;
+
+        }
+
+        .media {
+            align-items: center;
+            padding-top: 180px;
+        }
+
+        .account-img {
+            outline: #0060b1;
+        }
+
+        .media-body {
+            display: inline-block;
+            margin: 30px 0px 0px 28px;
+        }
+
+        .active-item {
+            color: black;
+
+        }
+
+        .normal-item {
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{message}}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    {% endfor %}
+    {% endif %}
+
+    {% if user.is_authenticated %}
+
+    <nav class="basenav">
+        <!-- <i id="nav1" class="fa-solid fa-book"></i> -->
+        <h1> Bookery</h1>
+        <ul>
+            <li>
+
+
+                <a class="one" href="{% url 'accounts:logout' %}">Logout</a>
+                <a class="one" href="{% url 'begin:contact' %}"> Contact Us</a>
+
+                <a class="one" href="{% url 'accounts:profile' %}">Profile</a>
+                <a class="one" href="{% url 'main:buy' %}">Buy</a>
+                <a class="one" href="{% url 'main:sell' %}">Sell</a>
+                <a class="active one" href="{% url 'begin:index' %}">Home</a>
+
+
+            </li>
+        </ul>
+    </nav>
+    {% else %}
+
+    <nav class="basenav">
+        <!-- <i id="nav1" class="fa-solid fa-book"></i> -->
+
+        <h1> Bookery</h1>
+        <ul>
+            <li>
+                <a class=" one" href="{% url 'accounts:signup' %}">Register</a>
+                <a class="one" href="{% url 'accounts:login' %}">Login</a>
+                <a class="one" href="{% url 'begin:contact' %}"> Contact Us</a>
+                <a class="one" href="{% url 'begin:service' %}">Our Services</a>
+                <a class="one" href="{% url 'begin:about-us' %}">About Us</a>
+                <a class="active one" href=" {% url 'begin:index' %}">Home</a>
+
+            </li>
+        </ul>
+
+    </nav>
+    {% endif %}
+
+    {% block body %}
+    JJJJJJJJJJJJJJJJJJJ
+    {% endblock %}
+
+</body>
+
+</html>

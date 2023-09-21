@@ -1,0 +1,28 @@
+{% extends 'begin/base.html' %}
+{% block body %}
+<div class="detail">
+    <h1 style="background-image: linear-gradient(to right, red, yellow, rgba(32, 211, 19, 0.501)); left: 10px;">Book's
+        Detail</h1>
+
+    <div class="image-side">
+        <img src="{{MEDIA_URL}}{{object.book_image}}" width="220px" height="300px" style="margin:10px;">
+    </div>
+    <h4>Seller:{{object.seller}}<br>
+        Book's name:{{object.book_name}}<br>
+        Edition:{{object.edition}}<br>
+        Price:{{object.price}}<br>
+        Location:{{object.location}}<br>
+        Contact num:{{object.phone}}<br>
+        id num:{{object.id}}<br>
+    </h4>
+</div>
+<!-- <a href="{% url 'main:addToCart' %}" class="btn btn-primary">addToCart</a> -->
+<!-- <a href="/main/showAddToCart/" class="btn btn-primary">addToCart</a> -->
+<a href="/main/showAddToCart/{{object.id}}" class="btn btn-primary">addToCart</a>
+
+{% if object.seller == user %}
+<a href="{% url 'main:update' object.id %}" class="btn btn-secondary">Update</a>
+<a href="{% url 'main:delete' object.id %}" class="btn btn-danger">Delete</a>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'begin/base.html' %}
+{% block body %}
+
+
+<style>
+    .struct {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgb(73, 150, 233);
+    }
+
+    .prompt {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        top: 25%;
+        left: 25%;
+        text-align: center;
+        background: white;
+    }
+</style>
+
+<div class="detail">
+    <h1
+        style="background-image: linear-gradient(to right, rgb(255, 181, 193), yellow, rgba(32, 211, 19, 0.501)); left: 10px;">
+        My Cart</h1>
+
+    <div class="image-side">
+        <img src="{{MEDIA_URL}}{{object.book_image}}" width="220px" height="300px" style="margin:10px;">
+    </div>
+    <h4>Seller:{{object.seller}}<br>
+        Id Num:{{object.id}}<br>
+        Book's name:{{object.book_name}}<br>
+        Edition:{{object.edition}}<br>
+        Price:{{object.price}}<br>
+        Location:{{object.location}}<br>
+        Contact num:{{object.phone}}<br>
+    </h4>
+
+    <a class="btn btn-info" href="/main/CartBuy">Buy</a>
+</div>
+
+<div class="struct" id="div">
+    <div class="prompt">
+        <h3>This is a centered pop-up div element</h3>
+
+        <button onclick="closeDiv()">Close PopUp</button>
+    </div>
+</div>
+<button onclick="openDiv()">Show PopUp</button>
+
+
+
+
+
+<script>
+    function myFunction() {
+        alert("Buying option is not available at the moment, Sorry😔!!!, Please try again later. ")
+    }
+
+    function openDiv() {
+        let get = document.querySelector('#div')
+        get.style.display = 'block'
+    }
+
+    function closeDiv() {
+        let get = document.querySelector('#div')
+        get.style.display = 'none'
+    }
+</script>
+
+{% endblock %}
